@@ -654,7 +654,7 @@ margin-bottom: 40px;
         max-width: 100%;
     }
     .home .home-img{
-        display: none;
+        display: inline-block;
     }
 }
 @media (max-width:767px){
