@@ -1,0 +1,25 @@
+    <script>
+         const form = document.querySelector('.contact-forms')
+        function sendMsg(e){
+            e.preventDefault();
+       
+                const  name = document.querySelector(' .names'),
+                            email = document.querySelector(' .email-address'),
+                            message = document.querySelector('.messages'),
+                            subject=document.querySelector('.subjects')
+
+
+
+                        Email.send({
+                        SecureToken: "8dd075c7-33ed-4605-a2c9-5d6eafcffc2c",
+                        To: 'roymurray237@gmail.com',
+                        From: email.value,
+                        Subject: subject.value,
+                        Body: messages.value
+                    }).then(
+                        message => alert(message)
+                    );
+
+                    form.addEventListener('submit', sendMsg)
+                }
+  
